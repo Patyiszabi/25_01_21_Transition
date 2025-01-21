@@ -1,34 +1,70 @@
+
 .box {
-    padding: 5px;
-    width: 100px;
-    height: 100px;
+    padding: 10px;
+    width: 150px;
+    height: 150px;
     margin: 20px;
+
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s, background-color 0.5s, width 0.5s, height 0.5s;
+}
+p{
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center; 
+    margin: 20px;
+    gap: 20px;
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s, transform 0.5s; 
+}
+
+nav:hover {
+    background-color: lightgray; 
+    transform: scale(1.05); 
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    color: darkblue;
+    transform: scale(1.1);
 }
 
 .box1 {
     background-color: lightblue;
-    transition: transform 2s, background-color 2s ease-in-out;
+    transition: transform 0.5s, background-color 0.5s ease-in-out;
 }
 
 .box1:hover {
     background-color: lightcoral;
-
-}    
+    transform: scale(1.1);
+}
 
 
 .box2 {
     background-color: lightgreen;
-    transition: transform 2s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 
 .box2:hover {
-    transform: rotate(45deg);
-
+    transform: rotate(45deg) scale(1.1);
 }
+
 
 .box3 {
     background-color: rgb(246, 246, 156);
-    transition: width 2s, height 2s, background-color 2s ease-in-out;
+    transition: width 0.5s, height 0.5s, background-color 0.5s ease-in-out;
 }
 
 .box3:hover {
@@ -37,9 +73,10 @@
     background-color: lightsalmon;
 }
 
+
 .box4 {
     background-color: lightcyan;
-    transition: transform 2s  ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 
 .box4:hover {
@@ -55,14 +92,4 @@
     width: 200px;
     height: 200px;
     background-color: lightseagreen;
-}
-
-p {
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    background-color: black;
-    margin: 20px;
 }

@@ -1,0 +1,79 @@
+.box {
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    background-color: orange;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s, background-color 0.5s, width 0.5s, height 0.5s;
+}
+
+nav {
+    display: flex;
+    justify-content: center; 
+    margin: 20px;
+    gap: 20px;
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s, transform 0.5s; 
+}
+
+nav:hover {
+    background-color: lightgray; 
+    transform: scale(1.05); 
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    color: darkblue;
+    transform: scale(1.1);
+}
+
+.box1 {
+    transition-timing-function: ease;
+}
+
+.box2 {
+    transition-timing-function: linear;
+}
+
+.box3 {
+    transition-timing-function: ease-in;
+}
+
+.box4 {
+    transition-timing-function: ease-out;
+}
+
+.box5 {
+    transition-timing-function: ease-in-out;
+}
+
+.box6 {
+    transition-timing-function: step-start;
+}
+
+.box7 {
+    transition-timing-function: step-end;
+}
+
+.box8 {
+    transition-timing-function: steps(5, end);
+}
+
+.box9 {
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+
+.box:hover {
+    width: 500px;
+}
