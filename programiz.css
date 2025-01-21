@@ -67,6 +67,10 @@ nav a:hover {
 
 .box8 {
     transition-timing-function: steps(5, end);
+} 
+
+.box8:hover {
+    background-color: rgb(156, 156, 129); 
 }
 
 .box9 {
