@@ -7,22 +7,28 @@
 
 .box1 {
     background-color: lightblue;
+    transition: transform 2s, background-color 2s ease-in-out;
 }
 
 .box1:hover {
     background-color: lightcoral;
-}
+
+}    
+
 
 .box2 {
     background-color: lightgreen;
+    transition: transform 2s ease-in-out;
 }
 
 .box2:hover {
     transform: rotate(45deg);
+
 }
 
 .box3 {
     background-color: rgb(246, 246, 156);
+    transition: width 2s, height 2s, background-color 2s ease-in-out;
 }
 
 .box3:hover {
@@ -33,7 +39,7 @@
 
 .box4 {
     background-color: lightcyan;
-    transition: transform 2s ease;
+    transition: transform 2s  ease-in-out;
 }
 
 .box4:hover {
@@ -42,6 +48,7 @@
 
 .box5 {
     background-color: lightpink;
+    transition: width 2s, height 2s, background-color 2s ease-in-out;
 }
 
 .box5:hover {
